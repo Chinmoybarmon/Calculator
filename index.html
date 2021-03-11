@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Calculator</h1>
+    <div>
+        <input id="i1" type="text" value="" placeholder="input the value"><button id="plus" style="color: blue;">+</button><input id="i2" type="text" value="" placeholder="input the value"><button id="plus1" style="color: blue;">=</button><input id="r1" type="text" value="" placeholder="press any button to show answer">
+    </div><br>
+    <div>
+        <input id="i3" type="text" value="" placeholder="input the value"><button id="minus" style="color: blue;">-</button ><input id="i4" type="text" value="" placeholder="input the value"><button id="minus1" style="color: blue;">=</button><input id="r2" type="text" value="" placeholder="press any button to show answer">
+    </div><br>
+    <div>
+        <input id="i5" type="text" value="" placeholder="input the value"><button id="multiple"style="color: blue;">*</button><input id="i6" type="text" value="" placeholder="input the value"><button id="multiple1" style="color: blue;">=</button><input id="r3" type="text" value="" placeholder="press any button to show answer">
+    </div><br>
+    <div>
+        <input id="i7" type="text" value="" placeholder="input the value"><button id="divide" style="color: blue;">/</button><input id="i8" type="text" value="" placeholder="input the value"><button id="divide1" style="color: blue;">=</button><input id="r4" type="text" value="" placeholder="press any button to show answer">
+    </div>
+    <script>
+        var btn=document.getElementById('plus').addEventListener('click',function(){
+            var i1=Number(document.getElementById('i1').value);
+            var i2=Number(document.getElementById('i2').value);
+            var result=i1+i2;
+            document.getElementById('r1').value=result;
+
+        })
+        var btn=document.getElementById('plus1').addEventListener('click',function(){
+            var i1=Number(document.getElementById('i1').value);
+            var i2=Number(document.getElementById('i2').value);
+            var result=i1+i2;
+            document.getElementById('r1').value=result;
+
+        })
+        var btn=document.getElementById('minus').addEventListener('click',function(){
+            var i3=Number(document.getElementById('i3').value);
+            var i4=Number(document.getElementById('i4').value);
+            var result=i3-i4;
+            document.getElementById('r2').value=result;
+        })
+        var btn=document.getElementById('minus1').addEventListener('click',function(){
+            var i3=Number(document.getElementById('i3').value);
+            var i4=Number(document.getElementById('i4').value);
+            var result=i3-i4;
+            document.getElementById('r2').value=result;
+        })
+        var btn=document.getElementById('multiple').addEventListener('click',function(){
+            var i5=Number(document.getElementById('i5').value);
+            var i6=Number(document.getElementById('i6').value);
+            var result=i5*i6;
+            document.getElementById('r3').value=result;
+        })
+        var btn=document.getElementById('multiple1').addEventListener('click',function(){
+            var i5=Number(document.getElementById('i5').value);
+            var i6=Number(document.getElementById('i6').value);
+            var result=i5*i6;
+            document.getElementById('r3').value=result;
+        })
+        var btn=document.getElementById('divide').addEventListener('click',function(){
+            var i7=Number(document.getElementById('i7').value);
+            var i8=Number(document.getElementById('i8').value);
+            var result=i7/i8;
+            document.getElementById('r4').value=result;
+        })
+        var btn=document.getElementById('divide1').addEventListener('click',function(){
+            var i7=Number(document.getElementById('i7').value);
+            var i8=Number(document.getElementById('i8').value);
+            var result=i7/i8;
+            document.getElementById('r4').value=result;
+        })
+    </script>
+</body>
+</html>
