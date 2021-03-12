@@ -19,11 +19,15 @@
     </div><br>
     <div>
         <input id="i7" type="text" value="" placeholder="input the value"><button id="divide" style="color: blue;">/</button><input id="i8" type="text" value="" placeholder="input the value"><button id="divide1" style="color: blue;">=</button><input id="r4" type="text" value="" placeholder="press any button to show answer">
-    </div>
+    </div><br>
+    <div>
+        <input id="i9" type="text" value="" placeholder="input the value"><button id="modulas" style="color: blue;">%</button><input id="i10" type="text" value="" placeholder="input the value"><button id="modulas1" style="color: blue;">=</button><input id="r5" type="text" value="" placeholder="press any button to show answer">
+    </div><br>
 
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); text-align: center;" >
         © 2021 Copyright:Chinmoy Barmon
-      </div>
+      </div><br><br><br><br><br><br><br><br><br><br>
+      <div></div>
     <script>
         var btn=document.getElementById('plus').addEventListener('click',function(){
             var i1=Number(document.getElementById('i1').value);
@@ -75,6 +79,19 @@
             var result=i7/i8;
             document.getElementById('r4').value=result;
         })
+        var btn=document.getElementById('modulas').addEventListener('click',function(){
+            var i9=Number(document.getElementById('i9').value);
+            var i10=Number(document.getElementById('i10').value);
+            var result=i9%i10;
+            document.getElementById('r5').value=result;
+        })
+        var btn=document.getElementById('modulas1').addEventListener('click',function(){
+            var i9=Number(document.getElementById('i9').value);
+            var i10=Number(document.getElementById('i10').value);
+            var result=i9%i10;
+            document.getElementById('r5').value=result;
+        })
+
     </script>
 </body>
 </html>
